@@ -23,7 +23,7 @@ public class Main {
         launcher.DEBUG_SERVER_LEVEL = 0; //debug
         launcher.addDatabaseManager(); //loads standard database manager thread
         launcher.addLoginHandler(); //loads standard login handler thread
-        launcher.addCareTaker(180000); //caretaker for checking server health
+        launcher.addCareTaker(1800000); //caretaker for checking server health
         CRUDHandler.DEBUG_CRUD = false;
 
 
