@@ -32,7 +32,7 @@ public class Main {
         http_protocol = new HTTP("res/front/",80) {
             public byte[] processGET(ServerConnection c, String uri, String resource, String[] fields, String[] values) {
                 if (uri.contains("/tickets") && fields.length>0) {
-                    return ticketManager.processGET(this,c,uri,resource,fields,values);
+                    //return ticketManager.processGET(this,c,uri,resource,fields,values);
                 }
                 return null;
             }
@@ -42,7 +42,7 @@ public class Main {
         WebPackets wp = new WebPackets() {
             public void processPOST(ServerConnection c, String uri, int packetID, String[] fields, String[] values) {
                 if (packetID >= 500 && packetID <= 600) {
-                    ticketManager.processPOST(http_protocol,c,uri,packetID,fields,values);
+                   // ticketManager.processPOST(http_protocol,c,uri,packetID,fields,values);
                 }
             }
         };
