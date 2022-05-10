@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JBend App - Log In</title>
+    <link rel="stylesheet" href="/style">
+</head>
+
+<body>
+    <p><a href="../../index.html">
+            <<< Return to home page</a>
+    </p>
+    <h1 id="logInHead">Login Page</h1>
+    <div id="pleaseText">
+        <p>Please enter username, email, and password.<br></p>
+    </div>
+    <div id='Main'>
+        <h2 id="errorCode"></h2>
+        <h2 id="statusCode"></h2>
+        <div id='loginForm'>
+            <input type="text" name="Username" placeholder="Username" id="enterUsername"></input><br />
+        </div>
+        <!--<input type="text" name="Email" placeholder="Email" id = "enterEmail"></input><br />-->
+        <div id='loginFormTwo'>
+            <input type="password" name="Password" placeholder="Password" id="enterPassword"></input><br />
+            <!-- added spacing between input fields and buttons -->
+        </div>
+        <br>
+        <button id="loginButton">Log in</button><br />
+        <button id="forgotPassButton">Forgot Password?</button><br />
+        <p id="msgText"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
