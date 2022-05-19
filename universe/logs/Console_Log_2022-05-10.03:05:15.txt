@@ -1,0 +1,34 @@
+loaded configuration for: DNE
+loaded configuration for: db_addr
+loaded configuration for: db_name
+loaded configuration for: db_user
+loaded configuration for: db_pass
+loaded configuration for: DNE
+config loaded.
+[Console] Initialized!
+[LAUNCHER] Loaded thread[0]:Console
+[LAUNCHER] Loaded thread[1]:DatabaseManager
+[LAUNCHER] Loaded thread[2]:LoginHandler
+[LAUNCHER] Loaded thread[3]:CareTaker
+[HTTP] Added route: /login
+[HTTP] Added route: /login.js
+[HTTP] Added route: /style
+[LAUNCHER] Loaded thread[4]:Web Server
+[LAUNCHER] Loaded thread[5]:TCP Server
+[LAUNCHER] Starting thread[0]:Console...
+[LAUNCHER] Starting thread[1]:DatabaseManager...
+[DatabaseManager] Attempting database connection to jdbc:mysql://127.0.0.1:3306/yourapp?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Chicago
+[DatabaseManager] Error connecting to database.
+java.sql.SQLSyntaxErrorException: Unknown database 'yourapp'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.db.DatabaseManager.connect(DatabaseManager.java:268)
+	at com.db.DatabaseManager.run(DatabaseManager.java:62)
+	at java.base/java.lang.Thread.run(Thread.java:830)
