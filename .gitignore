@@ -9,3 +9,7 @@
 */.DS-Store
 *.iml
 */*.iml
+*/*Console_Log*
+*/universe/logs/*
+/universe/logs/*
+./universe/logs/*
